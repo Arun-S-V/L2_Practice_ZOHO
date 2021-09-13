@@ -7,14 +7,25 @@ public class ReduceTheStringByRemovingKConsecutiveIdenticalCharacters {
     public static void main(String args[]){
         String str = "geeksforgeeks";
         int k = 2;
-        char array[] = str.toCharArray();
-        String[] strSplit = str.split("");
-        ArrayList<String> strList = new ArrayList<>(Arrays.asList(strSplit));
-        for(int i = 0;i<array.length;i++){
-            if(strList.get(i) == strList.get(i+1)){
-                strList.remove(i);
-                strList.remove(i+1);
+        int cnt = 1, n = str.length();
+        String res = "";
+        char c = str.charAt(0);
+        for (int i = 1; i <= n; i++) {
+            if (str.charAt(i) == str.charAt(i-1)) {
+                cnt++;
+                if (cnt == k) {
+                    i++;
+                    c = str.charAt(i);
+                    cnt = 1;
+                }
+            }
+            else {
+                res += (cnt * c);
+                c = str.charAt(i);
+                cnt = 1;
             }
         }
+        System.out.println(res);
     }
 }
+
