@@ -1,6 +1,4 @@
-package Array;
-
-import java.util.Arrays;
+package Arrays1;
 
 public class RotateArrayByItsLength {
     public static void main(String args[]) {

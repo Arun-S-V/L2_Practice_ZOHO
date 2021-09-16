@@ -1,4 +1,4 @@
-package Array;
+package Arrays1;
 
 public class RotateAArrayByOneTime {
     public static void main(String[] args) {

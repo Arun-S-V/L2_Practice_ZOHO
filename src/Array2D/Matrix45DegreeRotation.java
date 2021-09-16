@@ -20,7 +20,7 @@ public class Matrix45DegreeRotation {
             for(int j = 0;j<space;j++){
                 System.out.print(" ");
             }
-            for(int k =0;)
+            //for(int k =0;)
         }
     }
 }

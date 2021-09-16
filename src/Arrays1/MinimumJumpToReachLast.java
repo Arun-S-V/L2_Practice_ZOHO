@@ -1,4 +1,4 @@
-package Array;
+package Arrays1;
 
 public class MinimumJumpToReachLast {
     public static void main(String[] args) {

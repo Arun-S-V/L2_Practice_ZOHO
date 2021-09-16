@@ -1,4 +1,4 @@
-package Array;
+package Arrays1;
 
 public class FindAPeakInAArray {
     public static void main(String[] args) {

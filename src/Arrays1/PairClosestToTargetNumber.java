@@ -1,8 +1,4 @@
-package Array;
-
-import java.io.*;
-import java.util.*;
-import java.lang.Math;
+package Arrays1;
 
 public class PairClosestToTargetNumber {
     static void printClosest(int array[], int n, int x) {
