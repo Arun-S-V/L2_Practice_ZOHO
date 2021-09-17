@@ -8,9 +8,9 @@ public class SlidingWindow {
         int array[] = new int[]{1,3,-1,-3,5,3,6,7};
         int n = array.length;
         int k =3;
-        for(int i =0;i<n;i++){
+        for(int i =0;i<n-k+1;i++){
             int max = array[i];
-            for(int j = i+1;j<k;j++){
+            for(int j =i;j<k+i;j++){
                 if(array[j]>max){
                     max = array[j];
                 }
