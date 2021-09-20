@@ -4,8 +4,8 @@ public class PrintLeafNodes {
     BinaryTree.Node root;
     class Node{
         int data;
-        BinaryTree.Node left;
-        BinaryTree.Node right;
+        Node left;
+        Node right;
         Node(int data){
             this.data = data;
             left = null;
