@@ -1,3 +1,6 @@
+package Sorting;
+
+import java.util.*;
 class EvenPositionSortOddPositionReverseSort
 {
     void bitonicGenerator(long arr[], int n)

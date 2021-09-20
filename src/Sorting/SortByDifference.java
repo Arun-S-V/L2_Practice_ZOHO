@@ -1,9 +1,15 @@
+package Sorting;
+
+import java.util.ArrayList;
+import java.util.Map;
+import java.util.TreeMap;
+
 class SortByDifference
 {
     //Function to sort the array according to difference with given number.
     static void sortABS(int arr[], int n,int k)
     {
-        TreeMap<Integer,ArrayList<Integer>> map = new TreeMap<>();
+        TreeMap<Integer, ArrayList<Integer>> map = new TreeMap<>();
         for(int i =0;i<n;i++){
             int diff = arr[i]-k;
             diff = diff<0 ? -diff:diff;

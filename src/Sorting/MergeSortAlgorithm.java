@@ -1,3 +1,7 @@
+package Sorting;
+
+import java.util.Arrays;
+
 public class MergeSortAlgorithm {
     void sort(int arr[],int beg,int end){
         if(beg<end){

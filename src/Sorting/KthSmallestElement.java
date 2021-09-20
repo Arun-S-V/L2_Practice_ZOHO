@@ -1,3 +1,9 @@
+package Sorting;
+
+import java.util.Arrays;
+import java.util.Map;
+import java.util.TreeMap;
+
 class KthSmallest{
     public static int kthSmallest(int[] arr, int l, int r, int k) 
     { 
@@ -8,7 +14,7 @@ class KthSmallest{
 }
 
 class KthSmallestElement2{
-	public static int kthSmallestElement(int array,int n,int k){
+	public static int kthSmallestElement(int array[],int n,int k){
 		TreeMap<Integer,Integer> map = new TreeMap<>();
 		for(int i =0;i<n;i++){
 			if(map.containsKey(array[i])){
@@ -25,5 +31,6 @@ class KthSmallestElement2{
 				return entry.getKey();
 			}
 		}
+		return 1;
 	}
 }

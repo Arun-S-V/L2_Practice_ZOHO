@@ -1,3 +1,7 @@
+package Sorting;
+
+import java.util.Arrays;
+
 class MaximumNumberOfToysYouBuy{
     static int toyCount(int N, int K, int arr[])
     {

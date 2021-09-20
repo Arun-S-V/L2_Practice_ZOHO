@@ -1,3 +1,7 @@
+package Sorting;
+
+import java.util.Arrays;
+
 class ArraysEqualCheck{
     //Function to check if two arrays are equal or not.
     public static boolean check(long A[],long B[],int N)

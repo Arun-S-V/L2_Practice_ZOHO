@@ -1,7 +1,12 @@
+package Sorting;
+
+import java.util.Arrays;
+
 class AnagramCheck
 {    
     public static boolean isAnagram(String a,String b)
     {
+
         char array1[] = a.toCharArray();
         char array2[] = b.toCharArray();
         int m = array1.length;
