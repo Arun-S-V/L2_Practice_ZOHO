@@ -22,19 +22,24 @@ public class DeletionInTree {
         }
         if (X > root.data) {
             root.right = deleteNode(root.right, X);
-        } else if (root.data > X) {
+        }
+        else if (root.data > X) {
             root.left = deleteNode(root.left, X);
-        } else {
+        }
+        else {
             if (root.left != null && root.right != null) {
                 int left_max = new DeletionInTree().lmax(root.left);
                 root.data = left_max;
                 root.left = deleteNode(root.left, left_max);
                 return root;
-            } else if (root.left != null) {
+            }
+            else if (root.left != null) {
                 return root.left;
-            } else if (root.right != null) {
+            }
+            else if (root.right != null) {
                 return root.right;
-            } else {
+            }
+            else {
                 return null;
             }
         }
