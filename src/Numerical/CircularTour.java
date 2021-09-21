@@ -23,8 +23,8 @@ public class CircularTour {
 
     }
     public static void main(String args[]){
-        int petrol[] = new int[]{4,6,7,4,8};
-        int distance[] = new int[]{1,1,1,1,1};
+        int petrol[] = new int[]{4,6,7,4};
+        int distance[] = new int[]{1,13,14,1};
         int result = new CircularTour().tour(petrol,distance);
         System.out.println(result);
     }
