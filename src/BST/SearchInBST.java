@@ -1,6 +1,6 @@
 package BST;
 
-public class SearchBST {
+public class SearchInBST {
 
     Node root;
     class Node{
@@ -13,14 +13,14 @@ public class SearchBST {
             right = null;
         }
     }
-    public Node searchInBST(Node root,int val) {
+    public Node searchBST(Node root,int val) {
         if (root == null)
             return null;
         else if (root.data == val)
             return root;
         else if (root.data < val)
-            return searchInBST(root.right, val);
+            return searchBST(root.right, val);
         else
-            return searchInBST(root.left, val);
+            return searchBST(root.left, val);
     }
 }
