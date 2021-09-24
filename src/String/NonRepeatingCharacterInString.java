@@ -5,7 +5,7 @@ import java.util.LinkedHashMap;
 
 public class NonRepeatingCharacterInString {
     public static void main(String args[]) {
-        String str = "aaruunnui@";
+        String str = "aaruunnui@@";
         char lastNonRepeat = '0';
         LinkedHashMap<Character,Integer> map = new LinkedHashMap<>();
         for(int i = 0;i<str.length();i++){

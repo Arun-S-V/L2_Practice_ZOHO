@@ -21,7 +21,7 @@ public class MinimumDistanceBetweenTwoNodes {
     public int minDiffInBST(Node root) {
         List<Integer> list = new ArrayList<>();
         inOrder(root, list);
-        int min = Integer.MAX_VALUE;
+        int min = list.get(0);
         for(int i = 0; i < list.size()-1; i++)
             if(min > list.get(i+1)-list.get(i))
                 min = list.get(i+1)-list.get(i);
@@ -32,5 +32,8 @@ public class MinimumDistanceBetweenTwoNodes {
         inOrder(t.left, l);
         l.add(t.data);
         inOrder(t.right, l);
+    }
+    public static void main(String args[]){
+        MinimumDistanceBetweenTwoNodes bt = new MinimumDistanceBetweenTwoNodes();
     }
 }
